@@ -1,0 +1,39 @@
+.sch-input__container {
+  position: relative;
+}
+
+.sch-input {
+  width: 100%;
+  outline: none;
+  font-size: $_14px;
+  background-color: $ds-color-white;
+  border: none;
+  border-radius: 10px;
+  padding: 0 18px;
+  height: 35px;
+  position: relative;
+  &_gray {
+    background: $ds-color-background;
+  }
+  &_error {
+    background: $ds-color-error-background;
+  }
+  &_centred {
+    text-align: center;
+  }
+}
+
+.sch-input__description {
+  &_error {
+    color: $secondary-color;
+  }
+}
+
+.ds-loader {
+  position: absolute;
+  display: inline-block;
+  background: inherit;
+  top: 7.5px;
+  right: 9.5px;
+  left: auto;
+}

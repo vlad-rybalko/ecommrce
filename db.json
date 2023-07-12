@@ -1,0 +1,39 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Dos-Vi-Dos Auto fem (Семена)",
+      "link": "/sort/dos-vi-dos-auto-fem-semyanych",
+      "tags": [
+        {
+          "id": 3,
+          "title": "Рекомендуем",
+          "color": "#ffc905"
+        },
+        {
+          "id": 2,
+          "title": "ТОП",
+          "color": "#ffa614"
+        }
+      ],
+      "images": [
+        {
+          "alt": "",
+          "src": "https://a.semyanich-semena-24.xyz/resized/thumbnail/semyanich/90/Gorilla-face__R4zZhpfKZ5LFcH7a.jpg"
+        },
+        {
+          "alt": "",
+          "src": "https://a.semyanich-semena-24.xyz/resized/thumbnail/semyanich/85/Gorilla-fem-SCH__32GLe0ihtMsoWmj3.jpg"
+        }
+      ],
+      "rating": 4.8,
+      "reviews_count": 120,
+      "in_wishlist": true,
+      "in_comparison": false,
+      "price": 1125
+    }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ]
+}

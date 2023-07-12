@@ -1,0 +1,15 @@
+.ds-tooltip {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: $ds-color-neutral;
+    svg {
+        flex-shrink: 0;
+        width: 12px;
+        height: 12px;
+        --color: #959595;
+    }
+    .ds-text-7 {
+        line-height: 13px;
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "experimentalDecorators": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "lib": [
+      "DOM",
+      "DOM.iterable",
+      "es2021",
+      "ESNext",
+      "ESNext.AsyncIterable"
+    ],
+    "types": [
+      "@types/node",
+      "@nuxt/types"
+    ]
+  },
+  "extends": "./.nuxt/tsconfig.json",
+  "exclude": [
+    "node_modules"
+  ]
+}

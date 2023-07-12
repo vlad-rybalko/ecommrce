@@ -1,0 +1,41 @@
+.skeleton-item {
+    position: relative;
+    overflow: hidden;
+    background-color: $ds-color-inactive;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background: linear-gradient(90deg, 
+            $ds-color-inactive 0 50%, 
+            $ds-color-background 60%,
+            $ds-color-inactive 70% 100%
+        );
+        animation: shimmer 2s infinite;
+        content: '';
+    }
+
+    &_border-radius-10 {
+        border-radius: 10px;
+    }
+
+    &_border-radius-circle {
+        border-radius: 50%;
+    }
+}
+
+.skeleton-container {
+    position: relative;
+    overflow: hidden;
+    background-color: $ds-color-background;
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}

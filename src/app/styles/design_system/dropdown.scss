@@ -1,0 +1,18 @@
+.dropdown {
+    position: relative;
+    display: flex;
+}
+
+.dropdown__trigger {
+    display: flex;
+}
+
+.dropdown__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: $ds-color-white;
+    border-radius: 10px;
+    z-index: 1001;
+    box-shadow: $ds-shadow-small;
+}

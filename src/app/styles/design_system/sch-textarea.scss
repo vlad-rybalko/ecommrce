@@ -1,0 +1,20 @@
+.sch-textarea__container {
+  width: 100%;
+}
+
+.sch-textarea {
+  width: 100%;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  resize: none;
+}
+.sch-textarea__error {
+  background: $ds-color-error-background;
+}
+.sch-textarea__description {
+  &_error {
+    color: $secondary-color;
+  }
+}

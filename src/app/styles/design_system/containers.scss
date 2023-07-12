@@ -1,0 +1,47 @@
+.borderless {
+    padding: 0;
+    @media (min-width: 992px) {
+        padding: 0 15px;
+    }
+}
+
+.ds-main-content-container {
+    width: 100%;
+    max-width: $max-desktop-width;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.ds-container_primary {
+    border-radius: 30px;
+    color: $ds-color-white;
+    background: $ds-color-gradient-main;
+}
+
+.ds-container_primary-miror {
+    border-radius: 30px;
+    color: $ds-color-white;
+    background: $ds-color-gradient-mirror-main;
+}
+
+.ds-container_gray {
+    border-radius: 10px;
+    background: #F8F8F8;
+}
+
+.ds-container_inactive {
+    border-radius: 10px;
+    background: $ds-color-inactive;
+}
+
+.ds-container_white {
+    border-radius: 10px;
+    box-shadow: $ds-shadow-main;
+    background: $ds-color-white;
+}
+
+.ds-container_error {
+    background: $ds-color-error-background;
+    color: $ds-color-accent;
+    border-radius: 10px;
+}

@@ -1,0 +1,217 @@
+/*  BUTTONS
+--------------------------*/
+.btn {
+    display: inline-block;
+    font-size: $_16px;
+    line-height: 38px;
+    font-weight: 500;
+    padding: 0 15px;
+    text-align: center;
+    border: 1px solid $ds-color-primary;
+    border-radius: 10px;
+    cursor: pointer;
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    &.disabled,
+    [disabled] {
+        opacity: .75;
+        pointer-events: none;
+    }
+}
+
+.btn-sm {
+    font-size: $_12px;
+    line-height: 26px;
+    font-weight: 400;
+    padding: 0 7px;
+    @media (min-width: 992px) {
+        font-size: $_14px;
+        padding: 0 10px;
+    }
+}
+
+.btn-md {
+    padding: 0 30px;
+}
+
+.btn-long,
+.btn-file {
+    display: block;
+    width: 100%;
+    transition: color .3s ease-out,
+    background-color .3s ease-out;
+}
+
+.btn-default {
+    color: #FFF;
+    background-color: $ds-color-primary;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: #FFF;
+        background-color: $ds-color-primary-hover;
+        border-color: $ds-color-primary-hover;
+    }
+}
+
+.btn-white {
+    color: $ds-color-primary;
+    background-color: $ds-color-white;
+    border-color: $ds-color-white;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        box-shadow: 0px 4px 20px rgba(116, 185, 8, 0.7);
+    }
+}
+
+.btn-grey {
+    color: $ds-color-white;
+    background-color: $ds-color-neutral;
+    border-color: $ds-color-neutral;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        opacity: 0.7;
+    }
+}
+
+.btn-grey-filled {
+    color: #000000;
+    background-color: $ds-color-background;
+    border-color: $ds-color-background;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        background-color: $ds-color-primary;
+        color: #FFFFFF;
+        color: $ds-color-white;
+    }
+}
+
+.btn-primary {
+    color: $ds-color-primary;
+    background-color: #FFF;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: #FFF;
+        background-color: $ds-color-primary;
+        border-color: $ds-color-primary;
+    }
+}
+
+.btn-secondary {
+    color: $secondary-color;
+    background-color: #FFF;
+    border-color: $secondary-color;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: $secondary-color;
+    }
+}
+
+.btn-inverted {
+    color: #FFF;
+    background-color: $ds-color-primary;
+    border-color: #FFF;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: $ds-color-primary;
+        background-color: #FFF;
+    }
+}
+
+.btn-advanced {
+    color: #FFF;
+    background-color: #000000;
+    border-color: #000000;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: #FFF;
+        background-color: $ds-color-neutral;
+        border-color: $ds-color-neutral;
+    }
+}
+
+.btn-clean {
+    color: $ds-color-neutral;
+    background-color: #FFF;
+    border-color: $ds-color-neutral;
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:hover,
+    &:active:focus {
+        color: $ds-color-neutral;
+    }
+}
+
+.btn-no-events {
+    pointer-events: none;
+}
+
+.btn-text-nowrap {
+    white-space: nowrap;
+}
+
+/* BUTTONS GROUP */
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    :first-child {
+        @media (min-width: 576px) {
+            flex-grow: 1;
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.ds-link-button {
+    display: flex;
+    align-items: center;
+    font-size: $_14px;
+    font-weight: 400;
+    color: $ds-color-neutral;
+    svg {
+        transform: rotate(-90deg);
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        position: relative;
+        top: 1px;
+        --color: #959595;
+    }
+    &:hover {
+        svg {
+            --color: #74B908;
+        }
+    }
+
+}
